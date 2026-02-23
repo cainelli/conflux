@@ -1,4 +1,4 @@
-module github.com/getyourguide/disaster-recovery-plans
+module github.com/cainelli/conflux
 
 go 1.25.4
 

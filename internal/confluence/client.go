@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/getyourguide/disaster-recovery-plans/internal/config"
-	"github.com/getyourguide/disaster-recovery-plans/pkg/models"
+	"github.com/cainelli/conflux/internal/config"
+	"github.com/cainelli/conflux/pkg/models"
 	"github.com/go-resty/resty/v2"
 )
 
@@ -221,10 +221,10 @@ func (c *Client) CreatePage(spaceKey, title, content string, parentID string, la
 // UpdatePage updates an existing page in Confluence using REST API v2
 func (c *Client) UpdatePage(pageID, title, content string, version int, labels []string) (*models.RemotePage, error) {
 	type request struct {
-		ID      string `json:"id"`
-		Status  string `json:"status"`
-		Title   string `json:"title"`
-		Body    struct {
+		ID     string `json:"id"`
+		Status string `json:"status"`
+		Title  string `json:"title"`
+		Body   struct {
 			Representation string `json:"representation"`
 			Value          string `json:"value"`
 		} `json:"body"`
@@ -427,4 +427,3 @@ func (c *Client) TestConnection() error {
 
 	return nil
 }
-

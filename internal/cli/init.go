@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/getyourguide/disaster-recovery-plans/internal/config"
-	"github.com/getyourguide/disaster-recovery-plans/internal/confluence"
+	"github.com/cainelli/conflux/internal/config"
+	"github.com/cainelli/conflux/internal/confluence"
 	"github.com/spf13/cobra"
 )
 

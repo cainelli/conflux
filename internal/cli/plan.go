@@ -3,11 +3,11 @@ package cli
 import (
 	"fmt"
 
-	"github.com/getyourguide/disaster-recovery-plans/internal/config"
-	"github.com/getyourguide/disaster-recovery-plans/internal/confluence"
-	"github.com/getyourguide/disaster-recovery-plans/internal/local"
-	"github.com/getyourguide/disaster-recovery-plans/internal/planner"
-	"github.com/getyourguide/disaster-recovery-plans/pkg/models"
+	"github.com/cainelli/conflux/internal/config"
+	"github.com/cainelli/conflux/internal/confluence"
+	"github.com/cainelli/conflux/internal/local"
+	"github.com/cainelli/conflux/internal/planner"
+	"github.com/cainelli/conflux/pkg/models"
 	"github.com/spf13/cobra"
 )
 

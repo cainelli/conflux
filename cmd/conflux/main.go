@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/getyourguide/disaster-recovery-plans/internal/cli"
+	"github.com/cainelli/conflux/internal/cli"
 	"github.com/spf13/cobra"
 )
 

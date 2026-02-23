@@ -5,9 +5,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/getyourguide/disaster-recovery-plans/internal/confluence"
-	"github.com/getyourguide/disaster-recovery-plans/internal/local"
-	"github.com/getyourguide/disaster-recovery-plans/pkg/models"
+	"github.com/cainelli/conflux/internal/confluence"
+	"github.com/cainelli/conflux/internal/local"
+	"github.com/cainelli/conflux/pkg/models"
 )
 
 // Executor applies changes to Confluence

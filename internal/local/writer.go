@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/getyourguide/disaster-recovery-plans/pkg/models"
+	"github.com/cainelli/conflux/pkg/models"
 	"gopkg.in/yaml.v3"
 )
 
@@ -120,12 +120,12 @@ func (w *Writer) GenerateFilePath(title, parentPath string) (string, error) {
 // buildFrontmatter converts a Page to YAML frontmatter
 func buildFrontmatter(page *models.Page) (string, error) {
 	type FrontmatterData struct {
-		Title      string                     `yaml:"title"`
-		Confluence models.ConfluenceMetadata  `yaml:"confluence"`
-		Parent     string                     `yaml:"parent,omitempty"`
-		Labels     []string                   `yaml:"labels,omitempty"`
-		Version    int                        `yaml:"version"`
-		LastSync   string                     `yaml:"last_sync,omitempty"`
+		Title      string                    `yaml:"title"`
+		Confluence models.ConfluenceMetadata `yaml:"confluence"`
+		Parent     string                    `yaml:"parent,omitempty"`
+		Labels     []string                  `yaml:"labels,omitempty"`
+		Version    int                       `yaml:"version"`
+		LastSync   string                    `yaml:"last_sync,omitempty"`
 	}
 
 	data := FrontmatterData{

@@ -3,8 +3,8 @@ package planner
 import (
 	"fmt"
 
-	"github.com/getyourguide/disaster-recovery-plans/internal/confluence"
-	"github.com/getyourguide/disaster-recovery-plans/pkg/models"
+	"github.com/cainelli/conflux/internal/confluence"
+	"github.com/cainelli/conflux/pkg/models"
 	"github.com/sergi/go-diff/diffmatchpatch"
 )
 
