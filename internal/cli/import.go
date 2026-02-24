@@ -30,7 +30,7 @@ func NewImportCommand(configPath *string) *cobra.Command {
 
 	cmd.Flags().StringVarP(&pageID, "page-id", "p", "", "Confluence page ID to import (required)")
 	cmd.Flags().BoolVarP(&recursive, "recursive", "r", false, "recursively import child pages")
-	cmd.MarkFlagRequired("page-id")
+	cmd.MarkFlagRequired("page-id") // nolint:errcheck
 
 	return cmd
 }
@@ -125,5 +125,3 @@ func importPage(client *confluence.Client, writer *local.Writer, cfg *config.Con
 
 	return nil
 }
-
-
